@@ -1,0 +1,301 @@
+/* General Styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden;
+    font-family: 'Arial', sans-serif;
+    color: #ffffff;
+  }
+  
+  /* Video Background */
+  .video-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* Ensure the video stays in the background */
+    overflow: hidden;
+  }
+  
+  #bg-video {
+    min-width: 100%;
+    min-height: 100%;
+    object-fit: cover; /* Ensure the video covers the entire background */
+  }
+  
+  /* Content Styles */
+  .content {
+    position: relative;
+    z-index: 1; /* Ensure content stays on top of the video */
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background for better readability */
+    border: 1px solid #ff5722; /* Border around content */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Shadow effect */
+  }
+  
+  /* Section Styles */
+  .description, .skills, .projects, .contact, .social-media {
+    margin: 20px 0;
+    padding: 20px;
+    border: 1px solid #ff5722; /* Border around sections */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Shadow effect */
+  }
+  
+  h1, h2, h3 {
+    margin: 10px 0;
+    text-shadow: 2px 2px 4px #000000; /* Text shadow effect */
+  }
+  
+  /* Contact Form Styles */
+  .contact form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .contact input, .contact textarea {
+    width: 80%;
+    margin: 10px 0;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Shadow effect */
+  }
+  
+  /* Button Styles */
+  button {
+    padding: 10px 20px;
+    background-color: #ff5722; /* Button color */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Transition effect */
+  }
+  
+  button:hover {
+    background-color: #e64a19; /* Darker shade on hover */
+  }
+  
+  /* Social Media Links */
+  .social-media a {
+    margin: 0 10px;
+    color: #ffffff;
+    text-decoration: none;
+    transition: color 0.3s ease; /* Transition effect */
+  }
+  
+  .social-media a:hover {
+    color: #ff5722; /* Color change on hover */
+    text-decoration: underline; /* Underline on hover */
+  }
+  
+  /* Animations */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes fadeOut {
+    from {
+      opacity: 1;
+    }
+    to {
+      opacity: 0;
+    }
+  }
+  
+  @keyframes scaleUp {
+    from {
+      transform: scale(1);
+    }
+    to {
+      transform: scale(1.1);
+    }
+  }
+  
+  @keyframes scaleDown {
+    from {
+      transform: scale(1.1);
+    }
+    to {
+      transform: scale(1);
+    }
+  }
+  
+  /* Button Animation */
+  button {
+    animation: scaleUp 0.3s ease-in-out;
+  }
+  
+  button:hover {
+    animation: scaleDown 0.3s ease-in-out;
+  }
+  
+  /* Section Animation */
+  .description, .skills, .projects, .contact, .social-media {
+    animation: fadeIn 1s ease-in-out;
+  }
+  
+  /* Content Animation */
+  .content {
+    animation: fadeIn 1s ease-in-out;
+  }
+
+
+
+
+
+
+  body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%; /* Set height to 100% */
+    overflow-y: auto; /* Allow for vertical scrolling */
+    font-family: 'Arial', sans-serif;
+    color: #ffffff;
+  }
+  
+  /* Video Background */
+  .video-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* Ensure the video stays in the background */
+    overflow: hidden;
+  }
+  
+  #bg-video {
+    min-width: 100%;
+    min-height: 100%;
+    object-fit: cover; /* Ensure the video covers the entire background */
+  }
+  
+  /* Content Styles */
+  .content {
+    position: relative;
+    z-index: 1; /* Ensure content stays on top of the video */
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background for better readability */
+    border: 1px solid #ff5722; /* Border around content */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Shadow effect */
+    margin: 20px;
+  }
+  
+  h1, h2, h3 {
+    margin: 10px 0;
+    text-shadow: 2px 2px 4px #000000; /* Text shadow effect */
+  }
+  
+  /* Contact Form Styles */
+  .contact form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .contact input, .contact textarea {
+    width: 80%;
+    margin: 10px 0;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Shadow effect */
+  }
+  
+  /* Button Styles */
+  button {
+    padding: 10px 20px;
+    background-color: #ff5722; /* Button color */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Transition effect */
+  }
+  
+  button:hover {
+    background-color: #e64a19; /* Darker shade on hover */
+  }
+  
+  /* Social Media Links */
+  .social-media a {
+    margin: 0 10px;
+    color: #ffffff;
+    text-decoration: none;
+    transition: color 0.3s ease; /* Transition effect */
+  }
+  
+  .social-media a:hover {
+    color: #ff5722; /* Color change on hover */
+    text-decoration: underline; /* Underline on hover */
+  }
+  
+  /* Animations */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes fadeOut {
+    from {
+      opacity: 1;
+    }
+    to {
+      opacity: 0;
+    }
+  }
+  
+  @keyframes scaleUp {
+    from {
+      transform: scale(1);
+    }
+    to {
+      transform: scale(1.1);
+    }
+  }
+  
+  @keyframes scaleDown {
+    from {
+      transform: scale(1.1);
+    }
+    to {
+      transform: scale(1);
+    }
+  }
+  
+  /* Button Animation */
+  button {
+    animation: scaleUp 0.3s ease-in-out;
+  }
+  
+  button:hover {
+    animation: scaleDown 0.3s ease-in-out;
+  }
+  
+  /* Section Animation */
+  .description, .skills, .projects, .contact, .social-media {
+    animation: fadeIn 1s ease-in-out;
+  }
+  
+  /* Content Animation */
+  .content {
+    animation: fadeIn 1s ease-in-out;
+  }
