@@ -45,10 +45,74 @@ body, html {
     border-radius: 10px; /* Rounded corners */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Shadow effect */
   }
-  
-  h1, h2, h3 {
+/* Header Styles */
+h1 {
     margin: 10px 0;
     text-shadow: 2px 2px 4px #000000; /* Text shadow effect */
+    border: 2px solid #61dafb; /* Blue border around the header */
+    padding: 10px; /* Add some padding to the header */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Shadow effect */
+    transition: border-color 0.3s ease; /* Transition effect for border color */
+  }
+  
+  h1:hover {
+    border-color: #ff5722; /* Change border color to red on hover */
+    animation: pulse 1s ease-in-out; /* Pulse animation on hover */
+  }
+  
+  @keyframes pulse {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.1);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  /*h2, h3 {
+    margin: 10px 0;
+    text-shadow: 2px 2px 4px #000000; /* Text shadow effect */
+  /* Header Styles */
+
+  /* Subheader Styles */
+  h2 {
+    margin: 10px 0;
+    text-shadow: 2px 2px 4px #000000; /* Text shadow effect */
+    border-bottom: 1px solid #61dafb; /* Blue border at the bottom of the subheader */
+    padding-bottom: 10px; /* Add some padding to the bottom of the subheader */
+    transition: border-color 0.3s ease; /* Transition effect for border color */
+  }
+  
+  h2:hover {
+    border-bottom-color: #ff5722; /* Change border color to red on hover */
+  }
+  
+  /* Sub-subheader Styles */
+  h3 {
+    margin: 10px 0;
+    text-shadow: 2px 2px 4px #000000; /* Text shadow effect */
+    border-bottom: 1px solid #61dafb; /* Blue border at the bottom of the sub-subheader */
+    padding-bottom: 10px; /* Add some padding to the bottom of the sub-subheader */
+    transition: border-color 0.3s ease; /* Transition effect for border color */
+  }
+  
+  h3:hover {
+    border-bottom-color: #ff5722; /* Change border color to red on hover */
+  }
+  
+  /* Link Styles */
+  a {
+    color: #61dafb; /* Blue link color */
+    text-decoration: none; /* Remove underline from links */
+    transition: color 0.3s ease; /* Transition effect for link color */
+  }
+  
+  a:hover {
+    color: #ff5722; /* Change link color to red on hover */
+    text-decoration: underline; /* Add underline to links on hover */
   }
   
   /* Contact Form Styles */
